@@ -1,0 +1,115 @@
+
+*{
+box-sizing: border-box;
+margin:0;
+padding:0;
+
+}
+
+
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+    font-family:Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+  font-size: 1.6rem;
+
+}
+h1{
+  font-size: 6rem;
+}
+.app {
+  width:80%;
+  height:97vh;
+  margin-left: 80px;
+  margin-top: 60px;
+
+  background: url('./asset/blue.jpg') no-repeat center center/cover;
+  position:relative;
+  background-color: aqua;
+  color:rgb(104, 84, 51);
+
+}
+
+.app:before{
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+.app .search {
+
+  margin-left: -25px;
+  padding: 5rem;
+
+}
+
+.app input {
+  padding: 0.7rem;
+  font-size: 0.9rem;
+  border-radius:25px ;
+  border: 1px solid rgb(228, 244, 165);
+  background: rgb(206, 237, 239);
+}
+
+::placeholder{
+  color:rgb(78, 69, 58)
+
+}
+
+
+.container{
+  max-width: 700px;
+  height:700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+
+}
+
+
+
+.app.top{
+  width:100%;
+  margin: 1rem auto;
+ 
+
+}
+
+.app.description{
+  position: relative;
+  right:-90%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+
+}
+
+.app .bottom {
+
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  margin-bottom: 300px;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255,255,255, 0.2);
+}
+
+.bold {
+  font-weight: 500;
+  font-size: 14px;
+}
